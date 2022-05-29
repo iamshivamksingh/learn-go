@@ -23,6 +23,7 @@ func Hello(name string, language string) string {
 
 // This is a private method, as it is starting
 // with lowercase letter
+/*
 func greetingPrefix(language string) (prefix string) {
 	switch language {
 	case french:
@@ -34,6 +35,7 @@ func greetingPrefix(language string) (prefix string) {
 	}
 	return
 }
+*/
 
 // This is a private method, as it is starting
 // with lowercase letter
