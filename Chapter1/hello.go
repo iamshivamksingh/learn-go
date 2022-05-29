@@ -17,7 +17,8 @@ func Hello(name string, language string) string {
 		name = "World"
 	}
 
-	return greetingPrefix(language) + name
+	// return greetingPrefix(language) + name
+	return greetingPrefix_2(language) + name
 }
 
 // This is a private method, as it is starting
@@ -32,6 +33,19 @@ func greetingPrefix(language string) (prefix string) {
 		prefix = englishHelloPrefix
 	}
 	return
+}
+
+// This is a private method, as it is starting
+// with lowercase letter
+func greetingPrefix_2(language string) string {
+	prefix := englishHelloPrefix
+	switch language {
+	case french:
+		prefix = frenchHelloPrefix
+	case spanish:
+		prefix = spanishHelloPrefix
+	}
+	return prefix
 }
 
 func main() {
