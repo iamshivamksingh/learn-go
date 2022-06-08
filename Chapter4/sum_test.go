@@ -5,6 +5,15 @@ import (
 	"testing"
 )
 
+func TestSumArray(t *testing.T) {
+	got := SumArray([5]int{1, 2, 3, 4, 5})
+	want := 15
+
+	if got != want {
+		t.Errorf("got %v want %v", got, want)
+	}
+}
+
 func TestSum(t *testing.T) {
 
 	t.Run("adding collection of any size", func(t *testing.T) {

@@ -1,5 +1,13 @@
 package chapter4
 
+func SumArray(numbers [5]int) int {
+	sums := 0
+	for i := 0; i < 5; i++ {
+		sums += numbers[i]
+	}
+	return sums
+}
+
 func Sum(numbers []int) int {
 	sum := 0
 	for _, number := range numbers {
