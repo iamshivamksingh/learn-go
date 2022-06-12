@@ -8,6 +8,8 @@ type Stringer interface {
 	String() string
 }
 
+// The syntax for creating a method on a type declaration
+// is the same as it is on a struct
 func (b Bitcoin) String() string {
 	return fmt.Sprintf("%d BTC", b)
 }
@@ -25,4 +27,8 @@ func (w *Wallet) Balance() Bitcoin {
 	// implicit dereference
 	// automatically dereferenced
 	return w.balance
+}
+
+func (w *Wallet) Withdraw(amount Bitcoin) {
+	w.balance -= amount
 }
