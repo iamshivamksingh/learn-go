@@ -49,3 +49,11 @@ func (d Dictionary) Add(word, definition string) error {
 
 	return nil
 }
+
+func (d Dictionary) Update(word, definition string) {
+	d[word] = definition
+}
+
+func (d Dictionary) Delete(word string) {
+	delete(d, word)
+}
