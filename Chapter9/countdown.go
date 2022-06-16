@@ -44,3 +44,7 @@ func main() {
 	sleeper := &ConfigurableSleeper{1 * time.Second, time.Sleep}
 	Countdown(os.Stdout, sleeper)
 }
+
+// Test the behaviour not the implementation details
+// Practice implementing interfaces
+// "When to use iterative development? You should use iterative development only on projects that you want to succeed."
